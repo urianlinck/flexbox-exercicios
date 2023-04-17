@@ -3,13 +3,22 @@
   padding: 0;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 main{
   display: flex;
   gap: 20px;
   padding: 20px;
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   background-color: orange;
+  justify-content: center;
 }
 
 section{
@@ -26,13 +35,18 @@ section{
 }
 
 #section-2{
+  flex-grow: 1;
 }
 
 #section-3{
+  flex-grow: 2;
 }
 
 #section-4{
+  display: flex;
+  flex-basis: 200px;
 }
 
 #section-5{
+  order: -1;
 }
